@@ -1,0 +1,36 @@
+{
+  "name": "common",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
+    "publish": "git add . && git commit -m \"updates\" && npm run version patch && npm run build && npm publish"
+  },
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/passport": "^8.2.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "del-cli": "^4.0.1",
+    "rxjs": "^7.2.0",
+    "typeorm": "^0.2.45"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "prettier": "^2.3.2",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.3.5"
+  }
+}
