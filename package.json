@@ -1,5 +1,5 @@
 {
-  "name": "common",
+  "name": "@yj-major-project/common",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -9,11 +9,10 @@
     "build/**/*"
   ],
   "scripts": {
-    "clean": "del ./build/*",
+    "clean": "del-cli ./build/*",
     "build": "npm run clean && tsc",
     "publish": "git add . && git commit -m \"updates\" && npm run version patch && npm run build && npm publish"
   },
-  "private": true,
   "license": "UNLICENSED",
   "dependencies": {
     "@nestjs/common": "^8.0.0",
