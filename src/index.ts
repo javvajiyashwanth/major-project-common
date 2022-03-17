@@ -14,3 +14,4 @@ export * from './enums/roles.enum';
 // Guards
 export * from './guards/jwt-access-token-auth.guard';
 export * from './guards/jwt-refresh-token-auth.guard';
+export * from './guards/roles.guard';
