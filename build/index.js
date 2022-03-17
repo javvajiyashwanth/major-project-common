@@ -19,6 +19,7 @@ __exportStar(require("./decorators/current-user.decorator"), exports);
 __exportStar(require("./decorators/public.decorator"), exports);
 __exportStar(require("./dto/payload-with-refresh-token.dto"), exports);
 __exportStar(require("./dto/payload.dto"), exports);
+__exportStar(require("./enums/roles.enum"), exports);
 __exportStar(require("./guards/jwt-access-token-auth.guard"), exports);
 __exportStar(require("./guards/jwt-refresh-token-auth.guard"), exports);
 //# sourceMappingURL=index.js.map
