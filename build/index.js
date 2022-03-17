@@ -23,4 +23,5 @@ __exportStar(require("./dto/payload.dto"), exports);
 __exportStar(require("./enums/roles.enum"), exports);
 __exportStar(require("./guards/jwt-access-token-auth.guard"), exports);
 __exportStar(require("./guards/jwt-refresh-token-auth.guard"), exports);
+__exportStar(require("./guards/roles.guard"), exports);
 //# sourceMappingURL=index.js.map
