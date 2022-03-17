@@ -17,6 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./decorators/current-user-id.decorator"), exports);
 __exportStar(require("./decorators/current-user.decorator"), exports);
 __exportStar(require("./decorators/public.decorator"), exports);
+__exportStar(require("./decorators/roles.decorator"), exports);
 __exportStar(require("./dto/payload-with-refresh-token.dto"), exports);
 __exportStar(require("./dto/payload.dto"), exports);
 __exportStar(require("./enums/roles.enum"), exports);

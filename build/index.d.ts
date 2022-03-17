@@ -1,6 +1,7 @@
 export * from './decorators/current-user-id.decorator';
 export * from './decorators/current-user.decorator';
 export * from './decorators/public.decorator';
+export * from './decorators/roles.decorator';
 export * from './dto/payload-with-refresh-token.dto';
 export * from './dto/payload.dto';
 export * from './enums/roles.enum';
