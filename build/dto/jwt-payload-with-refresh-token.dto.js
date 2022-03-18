@@ -9,14 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PayloadDto = void 0;
+exports.JwtPayloadWithRefreshTokenDto = void 0;
 const class_validator_1 = require("class-validator");
-const typeorm_1 = require("typeorm");
-class PayloadDto {
+const jwt_payload_dto_1 = require("./jwt-payload.dto");
+class JwtPayloadWithRefreshTokenDto extends jwt_payload_dto_1.JwtPayloadDto {
 }
 __decorate([
     (0, class_validator_1.IsString)(),
-    __metadata("design:type", typeorm_1.ObjectID)
-], PayloadDto.prototype, "userId", void 0);
-exports.PayloadDto = PayloadDto;
-//# sourceMappingURL=payload.dto.js.map
+    __metadata("design:type", String)
+], JwtPayloadWithRefreshTokenDto.prototype, "refreshToken", void 0);
+exports.JwtPayloadWithRefreshTokenDto = JwtPayloadWithRefreshTokenDto;
+//# sourceMappingURL=jwt-payload-with-refresh-token.dto.js.map

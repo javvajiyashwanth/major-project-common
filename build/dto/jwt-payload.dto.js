@@ -9,14 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PayloadWithRefreshTokenDto = void 0;
+exports.JwtPayloadDto = void 0;
 const class_validator_1 = require("class-validator");
-const payload_dto_1 = require("./payload.dto");
-class PayloadWithRefreshTokenDto extends payload_dto_1.PayloadDto {
+const typeorm_1 = require("typeorm");
+class JwtPayloadDto {
 }
 __decorate([
     (0, class_validator_1.IsString)(),
+    __metadata("design:type", typeorm_1.ObjectID)
+], JwtPayloadDto.prototype, "id", void 0);
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], PayloadWithRefreshTokenDto.prototype, "refreshToken", void 0);
-exports.PayloadWithRefreshTokenDto = PayloadWithRefreshTokenDto;
-//# sourceMappingURL=payload-with-refresh-token.dto.js.map
+], JwtPayloadDto.prototype, "firstname", void 0);
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], JwtPayloadDto.prototype, "lastname", void 0);
+__decorate([
+    (0, class_validator_1.IsEmail)(),
+    __metadata("design:type", String)
+], JwtPayloadDto.prototype, "email", void 0);
+exports.JwtPayloadDto = JwtPayloadDto;
+//# sourceMappingURL=jwt-payload.dto.js.map
