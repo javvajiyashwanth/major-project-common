@@ -8,10 +8,14 @@ export * from './decorators/roles.decorator';
 export * from './dto/jwt-payload-with-refresh-token.dto';
 export * from './dto/jwt-payload.dto';
 
-//Enums
+// Enums
 export * from './enums/roles.enum';
 
 // Guards
 export * from './guards/jwt-access-token-auth.guard';
 export * from './guards/jwt-refresh-token-auth.guard';
 export * from './guards/roles.guard';
+
+// Strategies
+export * from './strategies/jwt-access-token.strategy';
+export * from './strategies/jwt-refresh-token.strategy';
