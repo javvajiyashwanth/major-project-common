@@ -8,3 +8,5 @@ export * from './enums/roles.enum';
 export * from './guards/jwt-access-token-auth.guard';
 export * from './guards/jwt-refresh-token-auth.guard';
 export * from './guards/roles.guard';
+export * from './strategies/jwt-access-token.strategy';
+export * from './strategies/jwt-refresh-token.strategy';

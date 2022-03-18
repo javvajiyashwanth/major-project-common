@@ -24,4 +24,6 @@ __exportStar(require("./enums/roles.enum"), exports);
 __exportStar(require("./guards/jwt-access-token-auth.guard"), exports);
 __exportStar(require("./guards/jwt-refresh-token-auth.guard"), exports);
 __exportStar(require("./guards/roles.guard"), exports);
+__exportStar(require("./strategies/jwt-access-token.strategy"), exports);
+__exportStar(require("./strategies/jwt-refresh-token.strategy"), exports);
 //# sourceMappingURL=index.js.map
