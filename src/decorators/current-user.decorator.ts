@@ -3,11 +3,11 @@ import { createParamDecorator, ExecutionContext } from "@nestjs/common";
 
 // Custom
 // DTOs
-import { PayloadWithRefreshTokenDto } from "../dto/payload-with-refresh-token.dto";
+import { JwtPayloadWithRefreshTokenDto } from "../dto/jwt-payload-with-refresh-token.dto";
 
 
 export const CurrentUser = createParamDecorator(
-  (data: keyof PayloadWithRefreshTokenDto | undefined, context: ExecutionContext) => {
+  (data: keyof JwtPayloadWithRefreshTokenDto | undefined, context: ExecutionContext) => {
     const req = context.switchToHttp().getRequest();
 
     if (!data) {

@@ -3,10 +3,10 @@ import { IsString } from "class-validator";
 
 // Custom
 // DTOs
-import { PayloadDto } from "./payload.dto";
+import { JwtPayloadDto } from "./jwt-payload.dto";
 
 
-export class PayloadWithRefreshTokenDto extends PayloadDto {
+export class JwtPayloadWithRefreshTokenDto extends JwtPayloadDto {
   @IsString()
   refreshToken: string;
 }

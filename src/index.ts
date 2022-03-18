@@ -5,8 +5,8 @@ export * from './decorators/public.decorator';
 export * from './decorators/roles.decorator';
 
 // DTOs
-export * from './dto/payload-with-refresh-token.dto';
-export * from './dto/payload.dto';
+export * from './dto/jwt-payload-with-refresh-token.dto';
+export * from './dto/jwt-payload.dto';
 
 //Enums
 export * from './enums/roles.enum';
