@@ -18,7 +18,7 @@ let JwtAccessTokenStrategy = class JwtAccessTokenStrategy extends (0, passport_1
         super({
             jwtFromRequest: passport_jwt_1.ExtractJwt.fromAuthHeaderAsBearerToken(),
             ignoreExpiration: false,
-            secretOrKey: process.env.JWT_KEY
+            secretOrKey: process.env.JWT_ACCESS_TOKEN_SECRET
         });
     }
     async validate(jwtPayload) {

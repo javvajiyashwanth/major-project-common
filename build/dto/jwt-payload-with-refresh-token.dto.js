@@ -15,6 +15,7 @@ const jwt_payload_dto_1 = require("./jwt-payload.dto");
 class JwtPayloadWithRefreshTokenDto extends jwt_payload_dto_1.JwtPayloadDto {
 }
 __decorate([
+    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], JwtPayloadWithRefreshTokenDto.prototype, "refreshToken", void 0);

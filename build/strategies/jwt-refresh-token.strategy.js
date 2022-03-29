@@ -18,7 +18,7 @@ let JwtRefreshTokenStrategy = class JwtRefreshTokenStrategy extends (0, passport
         super({
             jwtFromRequest: passport_jwt_1.ExtractJwt.fromAuthHeaderAsBearerToken(),
             ignoreExpiration: false,
-            secretOrKey: process.env.JWT_KEY,
+            secretOrKey: process.env.JWT_REFRESH_TOKEN_SECRET,
             passReqToCallback: true
         });
     }

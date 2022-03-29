@@ -1,7 +1,7 @@
-import { ObjectID } from "typeorm";
+import { ObjectId } from 'mongoose';
 import { Role } from "../enums/roles.enum";
 export declare class JwtPayloadDto {
-    id: ObjectID;
+    id: ObjectId;
     firstname: string;
     lastname: string;
     email: string;

@@ -11,26 +11,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JwtPayloadDto = void 0;
 const class_validator_1 = require("class-validator");
-const typeorm_1 = require("typeorm");
+const roles_enum_1 = require("../enums/roles.enum");
 class JwtPayloadDto {
 }
 __decorate([
+    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsString)(),
-    __metadata("design:type", typeorm_1.ObjectID)
+    __metadata("design:type", Object)
 ], JwtPayloadDto.prototype, "id", void 0);
 __decorate([
-    (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], JwtPayloadDto.prototype, "firstname", void 0);
 __decorate([
-    (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], JwtPayloadDto.prototype, "lastname", void 0);
 __decorate([
+    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsEmail)(),
     __metadata("design:type", String)
 ], JwtPayloadDto.prototype, "email", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ArrayNotEmpty)(),
+    (0, class_validator_1.ArrayUnique)(),
+    (0, class_validator_1.IsEnum)(roles_enum_1.Role, { each: true }),
+    __metadata("design:type", Array)
+], JwtPayloadDto.prototype, "roles", void 0);
 exports.JwtPayloadDto = JwtPayloadDto;
 //# sourceMappingURL=jwt-payload.dto.js.map
