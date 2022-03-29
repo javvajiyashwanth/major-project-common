@@ -17,21 +17,19 @@ export class JwtRefreshTokenStrategy extends PassportStrategy(Strategy, 'jwt-ref
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       ignoreExpiration: false,
-      secretOrKey: process.env.JWT_KEY,
+      secretOrKey: process.env.JWT_REFRESH_TOKEN_SECRET,
       passReqToCallback: true
     });
   }
 
   async validate(req: Request, jwtPayload: JwtPayloadDto) {
     const refreshToken = req?.get('authorization')?.replace('Bearer', '').trim();
-
     if (!refreshToken) {
       throw new ForbiddenException('Refresh token malformed');
     }
-
     return {
       ...jwtPayload,
       refreshToken
-    }
+    };
   }
 }

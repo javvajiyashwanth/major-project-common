@@ -9,11 +9,9 @@ import { JwtPayloadWithRefreshTokenDto } from "../dto/jwt-payload-with-refresh-t
 export const CurrentUser = createParamDecorator(
   (data: keyof JwtPayloadWithRefreshTokenDto | undefined, context: ExecutionContext) => {
     const req = context.switchToHttp().getRequest();
-
     if (!data) {
       return req.user;
     }
-    
     return req.user[data];
   }
 )

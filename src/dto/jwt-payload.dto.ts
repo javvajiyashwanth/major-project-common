@@ -1,6 +1,5 @@
 // Other Dependencies
-import { IsEmail, IsNotEmpty, IsString } from "class-validator";
-import { ObjectID } from "typeorm";
+import { ArrayNotEmpty, ArrayUnique, IsArray, IsEmail, IsEnum, IsNotEmpty, IsString } from "class-validator";
 
 // Custom
 // Enums
@@ -8,19 +7,26 @@ import { Role } from "../enums/roles.enum";
 
 
 export class JwtPayloadDto {
-  @IsString()
-  id: ObjectID;
-
-  @IsString()
   @IsNotEmpty()
+  @IsString()
+  id: ObjectId;
+
+  @IsNotEmpty()
+  @IsString()
   firstname: string;
 
-  @IsString()
   @IsNotEmpty()
+  @IsString()
   lastname: string;
 
+  @IsNotEmpty()
   @IsEmail()
   email: string;
 
+  @IsNotEmpty()
+  @IsArray()
+  @ArrayNotEmpty()
+  @ArrayUnique()
+  @IsEnum(Role, { each: true })
   roles: Role[];
 }
