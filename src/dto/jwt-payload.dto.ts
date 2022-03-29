@@ -1,5 +1,6 @@
 // Other Dependencies
 import { ArrayNotEmpty, ArrayUnique, IsArray, IsEmail, IsEnum, IsNotEmpty, IsString } from "class-validator";
+import { ObjectId } from 'mongoose';
 
 // Custom
 // Enums

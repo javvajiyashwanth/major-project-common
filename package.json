@@ -21,9 +21,9 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "del-cli": "^4.0.1",
+    "mongoose": "^6.2.9",
     "passport-jwt": "^4.0.0",
-    "rxjs": "^7.2.0",
-    "typeorm": "^0.2.45"
+    "rxjs": "^7.2.0"
   },
   "devDependencies": {
     "@types/node": "^16.0.0",
