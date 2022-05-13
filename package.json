@@ -1,6 +1,6 @@
 {
   "name": "@yj-major-project/common",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "description": "",
   "author": "",
   "main": "./build/index.js",
