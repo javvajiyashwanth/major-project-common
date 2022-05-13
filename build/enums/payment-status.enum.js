@@ -5,7 +5,6 @@ var PaymentStatus;
 (function (PaymentStatus) {
     PaymentStatus["Unpaid"] = "unpaid";
     PaymentStatus["Failed"] = "failed";
-    PaymentStatus["Expired"] = "expired";
     PaymentStatus["Paid"] = "paid";
 })(PaymentStatus = exports.PaymentStatus || (exports.PaymentStatus = {}));
 ;
