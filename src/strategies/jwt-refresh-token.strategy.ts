@@ -1,4 +1,4 @@
-// Nest
+// NestJS
 import { ForbiddenException, Injectable } from "@nestjs/common";
 import { PassportStrategy } from "@nestjs/passport";
 

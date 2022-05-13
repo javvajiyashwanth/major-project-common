@@ -1,4 +1,4 @@
-// Nest
+// NestJS
 import { createParamDecorator, ExecutionContext } from "@nestjs/common";
 
 // Custom
@@ -14,4 +14,4 @@ export const CurrentUser = createParamDecorator(
     }
     return req.user[data];
   }
-)
+);

@@ -1,4 +1,4 @@
-// Nest
+// NestJS
 import { SetMetadata } from '@nestjs/common';
 
 // Custom

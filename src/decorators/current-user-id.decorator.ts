@@ -1,4 +1,4 @@
-// Nest
+// NestJS
 import { createParamDecorator, ExecutionContext } from "@nestjs/common";
 
 // Custom
@@ -12,4 +12,4 @@ export const CurrentUserId = createParamDecorator(
     const user = req.user as JwtPayloadDto;
     return user.id;
   }
-)
+);

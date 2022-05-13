@@ -6,7 +6,7 @@ var OrderStatus;
     OrderStatus["Open"] = "open";
     OrderStatus["Confirmed"] = "confirmed";
     OrderStatus["Complete"] = "complete";
-    OrderStatus["Cancelled"] = "cancelled";
+    OrderStatus["Canceled"] = "canceled";
 })(OrderStatus = exports.OrderStatus || (exports.OrderStatus = {}));
 ;
 //# sourceMappingURL=order-status.enum.js.map
