@@ -5,7 +5,7 @@ var OrderStatus;
 (function (OrderStatus) {
     OrderStatus["Open"] = "open";
     OrderStatus["Confirmed"] = "confirmed";
-    OrderStatus["Complete"] = "complete";
+    OrderStatus["Completed"] = "completed";
     OrderStatus["Canceled"] = "canceled";
 })(OrderStatus = exports.OrderStatus || (exports.OrderStatus = {}));
 ;
